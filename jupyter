@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ ! -d venv ] ; then
+  echo "Run ./setup.sh first to set up python virtualenv and jupyterlab"
+  exit -1
+fi
+
+. venv/bin/activate
+jupyter-lab
